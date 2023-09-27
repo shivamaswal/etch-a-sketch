@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Etch-a-Sketch</h1>
+      <h2>unleash your creativity</h2>
+    </header>
+    <section class="section-game">
+      <div class="container">
+        <div class="grid"></div>
+      </div>
+    </section>
+    <section class="section-range">
+      <input
+        type="range"
+        max="100"
+        min="4"
+        value="15"
+        step="1"
+        id="sizeRange"
+        class="slider"
+      />
+      <h2>Select Pixel Size</h2>
+      <div class="flex btn-container">
+        <button class="btn btn-eraser">Eraser</button>
+        <button class="btn color-picker">
+          <span>Pick:</span>
+          <input type="color" id="input-color" name="color" value="#ff0000" />
+        </button>
+        <button class="btn btn-clear">Clear</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <h4>Made with Love by:</h4>
+      <div class="logos">
+        <a href="https://www.linkedin.com/in/shivamaswal/" target="_blank">
+          <ion-icon name="logo-linkedin" class="logo"></ion-icon>
+        </a>
+        <a href="https://github.com/shivamaswal" target="_blank">
+          <ion-icon name="logo-github" class="logo"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/shivamaswal87/" target="_blank">
+          <ion-icon name="logo-instagram" class="logo"></ion-icon>
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

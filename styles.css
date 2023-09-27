@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f1f9;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #c4adda;
+}
+
+.header h1 {
+  color: #4f3b61;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.header h2 {
+  color: #f5f1f9;
+  font-weight: 800;
+  font-size: 2rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4f3b61;
+}
+
+.section-game {
+  margin-top: 3.125rem;
+}
+
+.container {
+  height: 95vh;
+  width: 95vh;
+  max-height: 400px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-items {
+  height: 100%;
+  background-color: white;
+}
+
+.section-range {
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  width: 500px;
+}
+
+.section-range h2 {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container {
+  margin: 3.125rem 0;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #c4adda;
+  outline: none;
+  transform: rotate(180deg);
+  transition: 0.2s;
+  border-radius: 7px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #1f1827;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 18px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 9px;
+  transition: all 0.3s;
+  font-weight: 600;
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #4f3b61;
+  background-color: #c4adda;
+}
+
+.btn:hover {
+  color: #4f3b61;
+  background-color: #f5f1f9;
+}
+
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  margin: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #1f1827;
+}
+
+.logos {
+  margin-top: 2rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+@media (max-width: 540px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .section-range {
+    width: 300px;
+  }
+
+  .container {
+    height: 300px;
+    width: 300px;
+  }
+}
